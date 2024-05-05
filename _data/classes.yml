@@ -1,0 +1,17 @@
+classes:
+    - name: "CS 4830/5830"
+      time: "Spring 2022"
+      title: "Introduction to Cryptography"
+      category: "current"
+
+    - name: "CS 2802"
+      time: "Spring 2020"
+      title: "Discrete Structures - Honors"
+      category: "current"
+      link: "https://www.cs.cornell.edu/courses/cs2802/2020sp/"
+
+    - name: "CS 1110"
+      time: "Fall 2019"
+      title: "Introduction to Computing with Python"
+      category: "current"
+      link: "https://www.cs.cornell.edu/courses/cs1110/2019fa/"
