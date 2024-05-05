@@ -6,60 +6,50 @@ title: Home
 <div class="docs-section" id="bio">
   <h4>Bio</h4>
   <p>
-  My research develops tools for analyzing <b>large-scale social data</b>, aiming to provide a better understanding of <b>social structure and behaviors</b> online while also impacting the <b>design of digital social systems</b>. 
-  My recent work has focused on reducing political polarization online 
-  [<a href="assets/publications/2022_newsbridge/paper.pdf" target="_blank">ICWSM'22a</a>,
-  <a href="assets/publications/2022_flipfeed/paper.pdf" target="_blank">ICWSM'22b</a>,
-  <a href="assets/publications/2021_balanced_inf_max/paper.pdf" target="_blank">WSDM'21</a>,
-  <a href="assets/publications/2018_social_mirror/paper.pdf" target="_blank">WWW'18</a>],
-  improving the health of online conversations 
-  [<a href="assets/publications/2021_dtox/paper.pdf" target="_blank">WWW'21</a>, 
-  <a href="assets/publications/2021_social_catalysts/paper.pdf" target="_blank">CSCW'21</a>], 
-  and causal inference in social systems 
-  [<a href="assets/publications/2017_detecting_network_effects/paper.pdf" target="_blank">KDD'17</a>
-  <a href="assets/publications/2019_biometrika/paper.pdf" target="_blank">Biometrika'19</a>]. 
-  My research often falls at the intersections of Social Networks, Machine Learning, and Causal Inference.
+  I am a second-year MSCS student at Stanford University. My academic interests
+  lie in the intersection between AI and cybersecurity, particularly
+  the privacy and security implications of recent AI technologies. I am also 
+  broadly interested in cryptography, as well as how technology can be used to 
+  combat climate change and economic inequality. I am doing research at 
+  <a href="https://stair.cs.stanford.edu/">Stanford Trustworthy AI Research (STAIR)</a>
+  with Prof. <a href="https://cs.stanford.edu/people/sanmi/">Sanmi Koyejo</a>,  
+  <a href="https://stanfordmlgroup.github.io/programs/aicc-bootcamp/">AI for Climate Change</a> 
+  with Prof. <a href="https://www.andrewng.org/">Andrew Ng</a>, and working on 
+  CyberAgentBench: a cybersecurity benchmark for LLM agents with Profs. 
+  <a href="https://cs.stanford.edu/~pliang/">Percy Liang</a>, 
+  <a href="https://crypto.stanford.edu/~dabo/">Dan Boneh</a>, 
+  and <a href="https://dho.stanford.edu/">Daniel Ho</a>.
   </p>
 
   <p>
-  I'm an Assistant Professor in the Information School at the University of Washington.
-  Before joining UW, I was a Postdoc at Stanford University, mentored by <a href="https://web.stanford.edu/~jugander/" target="_blank">Johan Ugander</a>.
-  I received my Ph.D. from MIT in 2020 under the supervision of Deb Roy. 
-  Prior to coming to MIT, I spent one year in Paris and one year in Barcelona doing a M.Sc. in Data mining and Knowledge Management. 
-  I got my B.Sc. from Staffordshire University with First Class honors in Computer Science. 
-  Throughout my graduate studies, I spent several summers doing internships in industry, including Yahoo! Labs, Amazon, LinkedIn, and Facebook.
+  I received my undergraduate degree from Cornell University in 2022, double 
+  majoring in Mathematics and Computer Science. At Cornell, I was advised by 
+  Prof. <a href="https://www.cs.cornell.edu/home/halpern/">Joe Halpern</a> and 
+  did research on post-quantum cryptography with Prof. 
+  <a href="https://www.noahsd.com/">Noah Stephens-Davidowitz</a>. I was also 
+  honored to be a junior inductee into the 
+  Phi Beta Kappa honors society, an achievement reserved for the top 3% of 
+  students in my cohort.
   </p> 
-</div>
 
-<div class="docs-section" id="prospective-students">  
-  <h4>Prospective Students</h4>
   <p>
-  <b>I'm recruiting PhD students to start Fall 2024 at the University of Washington! </b> 
-  I'm looking for students passionate about using computational methods to study how social platforms can be reimagined to <u>enable better conversations, bridge political divides, and reduce the spread of misinfo</u>.
-  I'm particularly interested in the <u>role of algorithms</u> in social platforms.
-  I'm especially looking for students with a background and/or interest in <u>social network analysis, machine learning, causal inference, or natural language processing</u>.
-  <br/>
-  If you are interested, please apply to the UW iSchool <a href="https://ischool.uw.edu/programs/phd/admissions" target="_blank">PhD program</a> and mention me in your application.
-  <br/>
-  If you have any questions, feel free to reach out.
-  </p> 
+  I am from Bangkok, Thailand, but am currently based in Stanford, California.
+  </p>
 </div>
-
 
 <!-- ========== PUBLICATIONS ========== -->
 <div class="docs-section" id="publications">
   <h4>Publications</h4>
 
-  <p>Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
   <sup>‡</sup> indicates equal contribution.
   </p>
 
   <ul class="tab-nav">
-    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
-    <li><div class="button" data-ref="#papers-all">All</div></li>
+    <li><div class="button active" data-ref="#papers-all">All</div></li>
   </ul>
-
+ 
   <div class="tab-content">
+    <!--
     <div class="tab-pane active" id="papers-selected">
       {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
       {% for paper in selected_papers %}
@@ -96,8 +86,9 @@ title: Home
         </div>
       {% endfor %}
     </div>
+-->
 
-    <div class="tab-pane" id="papers-all">
+    <div class="tab-pane active" id="papers-all">
       {% for paper in site.data.publications.papers %}
         <div class="paper">
           <p class="title"><b>{{ paper.title }}</b></p>
@@ -210,43 +201,34 @@ title: Home
 </div>
 -->
 
+<div class="docs-section" id="teaching">
+    <h4>Teaching</h4>
+    <h5>Cornell University <span style="font-size: 0.75em;">(as TA)</span></h5>
+    {% assign current_classes = site.data.classes.classes | where: "category", "current" %}
+    {% for class in current_classes %}
+    <div class="class">
+        <p class="title"><b>{{ class.name }}</b> ({{ class.time }}): 
+          {% if class.link %}
+            <a href="{{ class.link }}" target="_blank">{{ class.title }}</a>
+          {% else %}
+            {{ class.title }}
+          {% endif %}
+        </p>
+      </div>      
+    {% endfor %}
+  </div>
+
 <!-- ========== RESUME ========== -->
 <div class="docs-section" id="resume">
-  <h4>Vitæ</h4>
+  <h4>Resume</h4>
 
-  <p>Full Resume in <a href={{ "/assets/cv/cv_web.pdf" | prepend: site.baseurl }} target="_blank">PDF</a>.</p>
+  <p>Full Resume in <a href={{ "/assets/cv/resume.pdf" | prepend: site.baseurl }} target="_blank">PDF</a> (as of March 2024).</p>
 
-  <!-- The Timeline -->
-  <ul class="timeline">
-    {% for exp in site.data.experience.experiences %}
-    <li>
-      {% if exp.category == "work" %}
-      <div class="direction-l">
-      {% else %}
-      <div class="direction-r">
-      {% endif %}
-        <div class="flag-wrapper">
-          <span class="flag">{{ exp.place }}</span>
-          <span class="time-wrapper"><span class="time">{{ exp.time }}</span></span>
-        </div>
-        <div class="desc"><b>{{ exp.title }}</b> <br/> {{ exp.subtitle }}</div>
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-</div>
 
-<div class="docs-section" id="template">
-  <h4>Website Design</h4>
-  Since I made this website, many people have found this Jekyll template useful [
-  {% for template_user in site.data.template_users.template_users %}
-  <a href="{{ template_user }}" target="_blank">{{ forloop.index }}</a>{% if forloop.last %}{% else %},{% endif %}
-  {% endfor %}
-  ].
-  <!--<br/>-->
-  You can find all the code needed to build your website in this <a href="https://github.com/msaveski/www_personal" target="_blank">GitHub repo</a>.
-  Feel free to use it. <br/>
-
-  If you end up using it, please link to here and drop me an email.
-  I'm always happy to see people using it.
-</div>  
+<div class="docs-section" id="ack">
+    <p>
+      This website uses the website design and template by <a href="https://github.com/msaveski/www_personal">Martin Saveski</a>.
+      Last updated: May 2024
+    </p>
+  
+  </div>
