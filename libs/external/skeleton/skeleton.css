@@ -302,8 +302,8 @@ ol ul {
   font-size: 90%; }
 li {
   margin-bottom: 1rem; 
-  text-indent: -2em;
-  padding-left: 2em; }
+  text-indent: -1em;
+  padding-left: 1em; }
 
 /* Code
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
