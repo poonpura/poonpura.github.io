@@ -2,14 +2,14 @@ papers:
 
   - title: "On Fairness of Low-Rank Adaptation of Large Models"
     authors: "Zhoujie Ding<sup>‡</sup>, Ken Ziyu Liu<sup>‡</sup>, <b>Pura Peetathawatchai</b>, Berivan Isik, Sanmi Koyejo"
-    venue: "Conference on Language Modeling 2024"
+    venue: "Conference on Language Modeling (COLM), 2024"
     paper_pdf: "/assets/publications/lora-fairness.pdf"
     code: "https://github.com/kenziyuliu/lora-eval"
     selected: y
 
   - title: "Just how hard are rotations of Z<sup>n</sup>? Algorithms and cryptography with the simplest lattice"
     authors: "Huck Bennett, Atul Ganju, <b>Pura Peetathawatchai</b>, Noah Stephens-Davidowitz"
-    venue: "Eurocrypt 2023."
+    venue: "International Conference on the Theory and Applications of Cryptographic Techniques (Eurocrypt), 2023"
     paper_pdf: "https://eprint.iacr.org/2021/1548.pdf"
     code: "https://github.com/poonpura/Experiments-on-Solving-SVP-on-Rotations-of-Z-n"
     selected: y
