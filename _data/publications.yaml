@@ -2,7 +2,7 @@ papers:
 
   - title: "On Fairness of Low-Rank Adaptation of Large Models"
     authors: "Zhoujie Ding<sup>‡</sup>, Ken Ziyu Liu<sup>‡</sup>, <b>Pura Peetathawatchai</b>, Berivan Isik, Sanmi Koyejo"
-    venue: "Preprint"
+    venue: "Conference on Language Modeling 2024"
     paper_pdf: "/assets/publications/lora-fairness.pdf"
     code: "https://github.com/kenziyuliu/lora-eval"
     selected: y
