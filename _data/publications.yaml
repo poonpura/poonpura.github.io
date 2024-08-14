@@ -2,7 +2,7 @@ papers:
 
   - title: "Cybench: A Framework for Evaluating LLM Cybersecurity Capabilities and Risk"
     authors: "Andy Zhang, Neil Perry, Riya Dulepet, Eliot Jones, Justin Lin, Joey Ji, Celeste Menders, Gashon Hussein, Samantha Liu, Donovan Jasper, <b>Pura Peetathawatchai</b>, Ari Glenn, Vikram Sivashankar, Daniel Zamoshchin, Leo Glikbarg, Derek Askaryar, Mike Yang, Teddy Zhang, Rishi Alluri, Nathan Tran, Rinnara Sangpisit, Polycarpos Yiorkadjis, Kenny Osele, Gautham Raghupathi, Dan Boneh, Daniel E. Ho, Percy Liang"
-    venue: "Preprint"
+    venue: "Preprint, 2024"
     paper_pdf: "/assets/publications/lora-fairness.pdf"
     code: "https://cybench.github.io/"
     selected: y
